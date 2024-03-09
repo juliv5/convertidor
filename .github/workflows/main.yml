@@ -34,6 +34,9 @@ jobs:
       - name: Build app bundle
         run: npm run build:prod
 
+        # Routing file remainig
+      - name: Rename Index for routing
+        run: mv dist/convertidor/index.html dist/convertidor/404.html
         # Deploy GitHub Pages
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
@@ -41,5 +44,5 @@ jobs:
           build_dir: dist/convertidor
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          
+
         
