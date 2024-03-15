@@ -7,22 +7,18 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './convertidor.component.html',
-  styleUrl: './convertidor.component.scss'
+  styleUrl: './convertidor.component.scss',
 })
 export class ConvertidorComponent {
   cantidad: number = 0;
-  tengo: string = "USD";
-  quiero: string = "EUR";
+  tengo: string = 'USD';
+  quiero: string = 'EUR';
   total: number = 0;
 
   monedas: string[] = ['USD', 'EUR', 'LIBRA'];
-  
-  constructor() {
 
-  }
-  ngOnInit(): void {
-
-  }
+  constructor() {}
+  ngOnInit(): void {}
   convertir(): void {
     switch (this.tengo) {
       case 'USD':
