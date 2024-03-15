@@ -17,8 +17,8 @@ export class ConvertidorComponent {
 
   monedas: string[] = ['USD', 'EUR', 'LIBRA'];
 
-  constructor() {}
-  ngOnInit(): void {}
+  constructor() { }
+  ngOnInit(): void { }
   convertir(): void {
     switch (this.tengo) {
       case 'USD':

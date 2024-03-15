@@ -10,8 +10,8 @@ describe('ConvertidorComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ConvertidorComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(ConvertidorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
